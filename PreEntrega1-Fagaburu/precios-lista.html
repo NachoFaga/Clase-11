@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de precios</title>
+    <link rel="shortcut icon" href="./Imagenes/logo3.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/proyecto.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Imagenes/mflogofondoheader.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./precios-lista.html">Precios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1 class="soli">Solicitud de lista de precios</h1>
+            <h4 class="soli">Para poder acceder a la lista de precios actualizado porfavor rellena el formulario asi lo enviamos correctamente a tu casilla de correo.</h4>
+    <div>
+        <form class="contenedor" action="">
+            <label class="formulario" for="Nombre">Nombre y apellido:</label>
+            <input class="formulario" type="text" id="Nombre" placeholder="Ingresar Nombre" required>
+            <label class="formulario" for="email">E-mail:</label>
+            <input class="formulario" type="email" name="" placeholder="Ingresar correo" id="email" required>
+            <label class="formulario" for="mensajes">Algun comentario que quieras dejarnos:</label>
+            <textarea name="Deja tu comentario" placeholder="Hola que tal! soy..." class="formulario" id="mensajes" cols="50" rows="1"></textarea>
+            <input class="formulario" type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
