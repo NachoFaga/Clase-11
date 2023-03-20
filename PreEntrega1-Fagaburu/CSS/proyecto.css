@@ -98,8 +98,8 @@ header:hover {
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: -18%;
     left: 0;
     padding: 2rem 8%;
     background-color: cornflowerblue;
