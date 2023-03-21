@@ -7,6 +7,10 @@
     <title>Lista de precios</title>
     <link rel="shortcut icon" href="./Imagenes/logo3.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/proyecto.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -23,18 +27,42 @@
             </ul>
         </nav>
     </header>
-        <h1 class="soli">Solicitud de lista de precios</h1>
-            <h4 class="soli">Para poder acceder a la lista de precios actualizado porfavor rellena el formulario asi lo enviamos correctamente a tu casilla de correo.</h4>
-    <div>
-        <form class="contenedor" action="">
-            <label class="formulario" for="Nombre">Nombre y apellido:</label>
-            <input class="formulario" type="text" id="Nombre" placeholder="Ingresar Nombre" required>
-            <label class="formulario" for="email">E-mail:</label>
-            <input class="formulario" type="email" name="" placeholder="Ingresar correo" id="email" required>
-            <label class="formulario" for="mensajes">Algun comentario que quieras dejarnos:</label>
-            <textarea name="Deja tu comentario" placeholder="Hola que tal! soy..." class="formulario" id="mensajes" cols="50" rows="1"></textarea>
-            <input class="formulario" type="submit" value="Enviar">
-        </form>
-    </div>
+
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipUsername" class="form-label">E-Mail</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+            Porfavor coloque un correo valido.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip03" class="form-label">Localidad</label>
+          <input type="text" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Porfavor indique su localidad/ciudad.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
 </body>
 </html>
