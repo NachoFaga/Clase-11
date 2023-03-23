@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;                 /* reset CSS */
+    box-sizing: border-box;
+}
+
+div.box{
+    width: 300px;/* con px es absoluto y con porcentajes % es relativo */
+    height: 200px;
+    background-color: aquamarine;       /* crea una caja que no se ve */
+    border-top: 5px solid red;
+/*     padding: 5 20 15 10; /* top right bottom left */
+    padding: 0 0; /* top down - right left poniendo un solo valor se hacen todos los lados*/
+    margin: 30px auto; /* de la caja hacia afuera y para centrarlo */
+    box-sizing: border-box; /* limitar borde */
+    overflow: auto; /* ocultar contenido exedente con SCROLL forza el scrool dentro de la caja */
+
+}
+
+#resalta {
+background-color: rgb(255, 0, 128);
+}

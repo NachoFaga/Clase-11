@@ -1,0 +1,60 @@
+.box-media {
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.grid-media {
+    background-color: turquoise;
+    padding: 20px;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+    .grid-media {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+.flex-media {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    display: flex;
+}
+.flex-media > div {
+    flex: 1;
+}
+
+@media (max-width: 500px) {
+    .flex-media {
+        flex-direction: column-reverse;
+    }
+    .flex-media .txt {
+        display: none;
+    }
+}
+
+/* responsive */
+
+@media (max-width: 500px) { /* hasta... */
+    /* css */
+    .box-media {
+        background-color: tomato;
+    }
+}
+
+@media (min-width: 768px) { /* desde... */
+    .box-media {
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+    .box-media {
+        background-color: black;
+        color: white;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>herencia y cascada</title>
+    <style>
+        div{
+            color: white;
+        }
+
+        h1{
+            color: aqua;
+        }
+
+        h1{
+            color: aquamarine;  /* siempre va a tomar el ultimo por que sobre escribe a los demas */
+        }
+
+        #texto {
+            background-color: aqua; /* # mata class */ /* Class mata etiqueta */
+        }
+
+        .texto {
+            background-color: brown ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="texto" class="texto">Texto de color malo</p>
+    </div>
+    <h1>
+        Titular racista
+    </h1>
+</body>
+</html>

@@ -1,0 +1,37 @@
+/* vars */ /* importar otro scss */
+header {
+  background-color: rgb(167, 0, 0);
+}
+header span {
+  color: black;
+}
+header nav {
+  display: flex;
+  background-color: cornflowerblue;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: chocolate;
+}
+header nav ul li a:hover {
+  color: green;
+}
+
+.producto {
+  background-color: black; /* llamar a la variable con $ */
+}
+.producto .producto__titulo {
+  font-size: 30px;
+}
+.producto__info { /* REEMPLAZA EL SELECTOR PADRE && */
+  font-size: 16px;
+  line-height: 1;
+}
+.producto .producto__titulo {
+  font-family: "Courier New", Courier, monospace;
+}/*# sourceMappingURL=main.css.map */

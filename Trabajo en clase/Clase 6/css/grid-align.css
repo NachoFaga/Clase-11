@@ -1,0 +1,21 @@
+#grid-padre {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 100px 100px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#grid-padre .grid-hijo {
+    background-color: orange;
+    padding: 10px;
+    font-family: sans-serif;
+}
+#grid-padre .grid-hijo.uno {
+    background-color: tomato;
+    justify-self: stretch;
+    align-self: stretch;
+}

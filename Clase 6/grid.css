@@ -1,0 +1,24 @@
+.grid-contenedor {
+    background-color: pink;
+    display: grid;
+    gap: 10px;
+    padding: 5px;
+/* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 1fr 1fr 2fr 1fr;  /*  Cada valor añade una columna y le da anchura */
+    grid-template-rows: 200px 200px;
+}
+
+.grid-contenedor .grid-item{
+    background-color: gold;
+    padding: 5px;
+}
+.grid-contenedor .grid-itemuno {
+    background-color: aquamarine;
+    border: 2px solid black;
+    grid-column: 1/3;
+}
+.grid-contenedor .grid-itemtres {
+    background-color: rgb(250, 0, 146);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}

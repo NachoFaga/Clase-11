@@ -164,13 +164,18 @@ footer {
 .card {
     display: flex;
     display: inline-block;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 /* lista de productos */
 
-.btn {
+#card {
     display: flex;
-    text-align: right;
+    text-align: center;
+    
 }
 
 /* Quienes somos */
@@ -293,6 +298,7 @@ footer {
         font-size: 1.25rem;
         background-color: transparent;
         cursor: pointer;
+        z-index: ini;
     }
 
     .abrir-menu {
@@ -332,5 +338,25 @@ footer {
 
     .nav-list li a {
         color: #ecececec;
+    }
+
+    #donde {
+        text-align: center;
+        position: relative;
+    }
+
+    .sociales {
+        text-align: center;
+        position: relative;   
+    }
+
+    #mapa {
+        display: flex;
+        align-items: center;
+    }
+
+    .link {
+        text-align: center;
+        position: relative;
     }
 }

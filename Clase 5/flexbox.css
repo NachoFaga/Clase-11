@@ -1,0 +1,25 @@
+.flex{
+    display: flex;  /* tiene q estar activado el display flex */
+    padding: 5px;
+    gap: 5px; /* separar elementos entre ellos */
+    flex-direction: column;
+    flex-wrap: wrap; /* es para que las imagenes no se hagan mas grandes */
+    justify-content: flex-start;        /* start es izquierda y end derecha */
+    align-items: stretch; /* separa en horistonzal */
+    align-content: space-between;   /* en vertical */
+
+}
+
+.flex .flexhijo{
+    background-color: cornflowerblue;
+    padding: 5px;
+}
+
+.flex .flexhijo img {
+    width: 100%;
+    height: auto;
+}
+
+#bocha {
+    order: 2;
+}
